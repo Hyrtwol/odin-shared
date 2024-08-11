@@ -1,0 +1,43 @@
+{
+	"editor.wordWrapColumn": 200,
+	"editor.rulers": [
+		200
+	],
+	"markdownlint.config": {
+		"no-hard-tabs": false,
+		"line-length": false
+	},
+	"[markdown]": {
+		"editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+	},
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+	"typescript.tsc.autoDetect": "off",
+	"npm.autoDetect": "off",
+	"files.exclude": {
+		"**/.git": true,
+		"**/.DS_Store": true,
+		"**/Thumbs.db": true,
+		"**/desktop.ini": true
+	},
+	"files.associations": {
+		"*.log": "plaintext",
+		"*.lst": "plaintext",
+		"*.fdp": "xml",
+		"*.recipe": "msbuild",
+		"*.csproj": "msbuild",
+		"*.oproj": "msbuild"
+	},
+	"workbench.editorAssociations": {
+		"*.fsb": "hexEditor.hexedit",
+		"*.fev": "hexEditor.hexedit",
+		"*.res": "hexEditor.hexedit",
+		"*.rom": "hexEditor.hexedit"
+	},
+	"git.enabled": false,
+	"xmlTools.splitXmlnsOnFormat": false,
+	// "ols.server.path": "D:\\dev\\odin\\ols\\ols.exe",
+	"cSpell.language": "en",
+	"cSpell.enableFiletypes": [
+		"odin"
+	]
+}
