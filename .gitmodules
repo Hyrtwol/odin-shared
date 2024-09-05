@@ -4,3 +4,6 @@
 [submodule "coreclr"]
 	path = coreclr
 	url = git@github.com:Hyrtwol/odin-coreclr.git
+[submodule "fmodex"]
+	path = fmodex
+	url = git@github.com:Hyrtwol/odin-fmodex.git
