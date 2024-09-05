@@ -1,3 +1,6 @@
 [submodule "ounit"]
 	path = ounit
 	url = git@github.com:Hyrtwol/odin-ounit.git
+[submodule "coreclr"]
+	path = coreclr
+	url = git@github.com:Hyrtwol/odin-coreclr.git
