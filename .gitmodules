@@ -22,3 +22,6 @@
 [submodule "newtek_lightwave"]
 	path = newtek_lightwave
 	url = git@github.com:Hyrtwol/odin-newtek-lightwave.git
+[submodule "flac"]
+	path = flac
+	url = git@github.com:Hyrtwol/odin-flac.git
