@@ -1,0 +1,3 @@
+[submodule "ounit"]
+	path = ounit
+	url = git@github.com:Hyrtwol/odin-ounit.git
