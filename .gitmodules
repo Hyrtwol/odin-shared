@@ -7,3 +7,6 @@
 [submodule "fmodex"]
 	path = fmodex
 	url = git@github.com:Hyrtwol/odin-fmodex.git
+[submodule "wasmtime"]
+	path = wasmtime
+	url = git@github.com:Hyrtwol/odin-wasmtime.git
