@@ -13,3 +13,6 @@
 [submodule "z80"]
 	path = z80
 	url = git@github.com:Hyrtwol/odin-z80.git
+[submodule "xterm"]
+	path = xterm
+	url = git@github.com:Hyrtwol/odin-xterm.git
