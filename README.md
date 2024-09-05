@@ -46,23 +46,13 @@ git submodule add git@github.com:Hyrtwol/odin-flac.git flac
 git submodule add git@github.com:Hyrtwol/odin-fmodex.git fmodex
 git submodule add git@github.com:Hyrtwol/odin-newtek_lightwave.git newtek_lightwave
 git submodule add git@github.com:Hyrtwol/odin-newton_dynamics.git newton_dynamics
-git submodule add git@github.com:Hyrtwol/odin-owin.git owin
 git submodule add git@github.com:Hyrtwol/odin-wasmtime.git wasmtime
 git submodule add git@github.com:Hyrtwol/odin-xatlas.git xatlas
 git submodule add git@github.com:Hyrtwol/odin-xterm.git xterm
 git submodule add git@github.com:Hyrtwol/odin-z80.git z80
 ```
 
-Work in progress:
-
-```bat
-git submodule add git@github.com:Hyrtwol/odin-msbuild.git msbuild
-git submodule add git@github.com:Hyrtwol/odin-tinyspline.git tinyspline
-```
-
-```bat
-git submodule add git@github.com:Hyrtwol/odin-ols.git ols
-```
+### Update
 
 ```bat
 git submodule update --recursive
