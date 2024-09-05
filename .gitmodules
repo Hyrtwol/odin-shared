@@ -28,3 +28,6 @@
 [submodule "xatlas"]
 	path = xatlas
 	url = git@github.com:Hyrtwol/odin-xatlas.git
+[submodule "objzero"]
+	path = objzero
+	url = git@github.com:Hyrtwol/odin-objzero.git
