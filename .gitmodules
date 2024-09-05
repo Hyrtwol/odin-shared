@@ -25,3 +25,6 @@
 [submodule "flac"]
 	path = flac
 	url = git@github.com:Hyrtwol/odin-flac.git
+[submodule "xatlas"]
+	path = xatlas
+	url = git@github.com:Hyrtwol/odin-xatlas.git
