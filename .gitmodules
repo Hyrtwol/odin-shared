@@ -16,3 +16,6 @@
 [submodule "xterm"]
 	path = xterm
 	url = git@github.com:Hyrtwol/odin-xterm.git
+[submodule "newton_dynamics"]
+	path = newton_dynamics
+	url = git@github.com:Hyrtwol/odin-newton-dynamics.git
