@@ -7,8 +7,8 @@
 			"command": "odin",
 			"args": [
 				"run",
-				"..\\${relativeFileDirname}",
-				"-collection:shared=..",
+				"${workspaceFolder}${pathSeparator}${relativeFileDirname}",
+				"${config:odin.shared}",
 				"-vet",
 				"-strict-style"
 			],
@@ -18,7 +18,7 @@
 				"isDefault": "**/*.odin"
 			},
 			"options": {
-				"cwd": "${workspaceFolder}/bin"
+				"cwd": "${relativeFileDirname}"
 			}
 		},
 		{
@@ -28,7 +28,7 @@
 			"args": [
 				"build",
 				"..\\${relativeFileDirname}",
-				"-collection:shared=..",
+				"${config:odin.shared}",
 				"-vet",
 				"-strict-style"
 			],
@@ -38,7 +38,7 @@
 				"isDefault": false
 			},
 			"options": {
-				"cwd": "${workspaceFolder}/bin"
+				"cwd": "${relativeFileDirname}"
 			}
 		},
 		{
@@ -48,7 +48,7 @@
 			"args": [
 				"test",
 				".",
-				"-collection:shared=${workspaceFolder}",
+				"${config:odin.shared}",
 				"-vet",
 				"-strict-style"
 			],
@@ -68,7 +68,7 @@
 			"args": [
 				"build",
 				"..\\${relativeFileDirname}",
-				"-collection:shared=..",
+				"${config:odin.shared}",
 				"-debug"
 			],
 			"problemMatcher": [],
@@ -77,7 +77,7 @@
 				"isDefault": false
 			},
 			"options": {
-				"cwd": "${workspaceFolder}/bin"
+				"cwd": "${relativeFileDirname}"
 			}
 		},
 		{
@@ -87,7 +87,7 @@
 			"args": [
 				"check",
 				"..\\${relativeFileDirname}",
-				"-collection:shared=..",
+				"${config:odin.shared}",
 				"-no-entry-point",
 				"-vet"
 			],
@@ -97,7 +97,7 @@
 				"isDefault": false
 			},
 			"options": {
-				"cwd": "${workspaceFolder}/bin"
+				"cwd": "${relativeFileDirname}"
 			}
 		},
 		{
@@ -107,7 +107,7 @@
 			"args": [
 				"strip-semicolon",
 				"..\\${relativeFileDirname}",
-				"-collection:shared=..",
+				"${config:odin.shared}",
 				"-no-entry-point"
 			],
 			"problemMatcher": [],
@@ -116,7 +116,7 @@
 				"isDefault": false
 			},
 			"options": {
-				"cwd": "${workspaceFolder}/bin"
+				"cwd": "${relativeFileDirname}"
 			}
 		},
 		{
@@ -126,7 +126,7 @@
 			"args": [
 				"doc",
 				"..\\${relativeFileDirname}", //"-doc-format",
-				"-collection:shared=..",
+				"${config:odin.shared}",
 				">",
 				"${fileDirnameBasename}.txt"
 			],
@@ -136,13 +136,13 @@
 				"isDefault": false
 			},
 			"options": {
-				"cwd": "${workspaceFolder}/bin"
+				"cwd": "${relativeFileDirname}"
 			}
 		},
 		{
 			"label": "format",
 			"type": "process",
-			"command": "${workspaceFolder}/ols/odinfmt.exe",
+			"command": "${config:odin.odinfmt}",
 			"args": [
 				"-w",
 				"${workspaceFolder}\\${relativeFile}"
