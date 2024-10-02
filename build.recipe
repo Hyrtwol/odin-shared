@@ -1,0 +1,63 @@
+<Project DefaultTargets="All" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<PropertyGroup>
+		<RecipeVersion>0.1</RecipeVersion>
+		<ArtifactName>OdinShared</ArtifactName>
+		<ArtifactCompany>Hyrtwol</ArtifactCompany>
+		<ArtifactAuthors>Thomas la Cour</ArtifactAuthors>
+		<ArtifactCopyright>Copyright 2023 $(ArtifactCompany)</ArtifactCopyright>
+		<ArtifactProjectUrl>https://github.com/Hyrtwol/odin-shared</ArtifactProjectUrl>
+		<ArtifactVCSRootUrl>git@github.com:Hyrtwol/odin-shared.git</ArtifactVCSRootUrl>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Project Include="coreclr\examples\gateway">
+			<Flavour>Odin</Flavour>
+			<OutputType>Exe</OutputType>
+		</Project>
+		<Project Include="wasmtime\examples\gcd">
+			<Flavour>Odin</Flavour>
+		</Project>
+		<Project Include="z80\examples\z80emulator">
+			<Flavour>Odin</Flavour>
+		</Project>
+
+		<Project Include="coreclr\tests">
+			<Flavour>OdinTest</Flavour>
+			<Defines>-define:ODIN_TEST_THREADS=1</Defines>
+		</Project>
+		<Project Include="newtek_lightwave\tests">
+			<Flavour>OdinTest</Flavour>
+		</Project>
+		<Project Include="newton_dynamics\tests">
+			<Flavour>OdinTest</Flavour>
+		</Project>
+		<Project Include="objzero\tests">
+			<Flavour>OdinTest</Flavour>
+		</Project>
+		<Project Include="owin\tests">
+			<Flavour>OdinTest</Flavour>
+		</Project>
+		<Project Include="wasmtime\tests">
+			<Flavour>OdinTest</Flavour>
+		</Project>
+		<Project Include="xatlas\tests">
+			<Flavour>OdinTest</Flavour>
+		</Project>
+		<Project Include="xterm\tests">
+			<Flavour>OdinTest</Flavour>
+		</Project>
+		<Project Include="z80\tests">
+			<Flavour>OdinTest</Flavour>
+		</Project>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Collection Include="$(ODIN_SHARED)">
+			<Alias>shared</Alias>
+		</Collection>
+	</ItemGroup>
+
+	<Import Project="msbuild\Odin.MSBuild\bin\Release\netstandard2.0\Odin.targets"/>
+
+</Project>

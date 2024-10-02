@@ -8,7 +8,7 @@
 			"args": [
 				"run",
 				"${workspaceFolder}${pathSeparator}${relativeFileDirname}",
-				"${config:odin.shared}",
+				"${config:odin.collection.shared}",
 				"-vet",
 				"-strict-style"
 			],
@@ -27,8 +27,8 @@
 			"command": "odin",
 			"args": [
 				"build",
-				"..\\${relativeFileDirname}",
-				"${config:odin.shared}",
+				"..${pathSeparator}${relativeFileDirname}",
+				"${config:odin.collection.shared}",
 				"-vet",
 				"-strict-style"
 			],
@@ -48,7 +48,7 @@
 			"args": [
 				"test",
 				".",
-				"${config:odin.shared}",
+				"${config:odin.collection.shared}",
 				"-vet",
 				"-strict-style"
 			],
@@ -67,8 +67,8 @@
 			"command": "odin",
 			"args": [
 				"build",
-				"..\\${relativeFileDirname}",
-				"${config:odin.shared}",
+				"..${pathSeparator}${relativeFileDirname}",
+				"${config:odin.collection.shared}",
 				"-debug"
 			],
 			"problemMatcher": [],
@@ -86,10 +86,11 @@
 			"command": "odin",
 			"args": [
 				"check",
-				"..\\${relativeFileDirname}",
-				"${config:odin.shared}",
-				"-no-entry-point",
-				"-vet"
+				"..${pathSeparator}${relativeFileDirname}",
+				"${config:odin.collection.shared}",
+				"-vet",
+				"-strict-style",
+				"-no-entry-point"
 			],
 			"problemMatcher": [],
 			"group": {
@@ -106,8 +107,8 @@
 			"command": "odin",
 			"args": [
 				"strip-semicolon",
-				"..\\${relativeFileDirname}",
-				"${config:odin.shared}",
+				"..${pathSeparator}${relativeFileDirname}",
+				"${config:odin.collection.shared}",
 				"-no-entry-point"
 			],
 			"problemMatcher": [],
@@ -125,10 +126,10 @@
 			"command": "odin",
 			"args": [
 				"doc",
-				"..\\${relativeFileDirname}", //"-doc-format",
-				"${config:odin.shared}",
+				"..${pathSeparator}${relativeFileDirname}", //"-doc-format",
+				"${config:odin.collection.shared}",
 				">",
-				"${fileDirnameBasename}.txt"
+				"${workspaceFolder}${pathSeparator}doc${pathSeparator}${fileDirnameBasename}.txt"
 			],
 			"problemMatcher": [],
 			"group": {
@@ -145,7 +146,7 @@
 			"command": "${config:odin.odinfmt}",
 			"args": [
 				"-w",
-				"${workspaceFolder}\\${relativeFile}"
+				"${workspaceFolder}${pathSeparator}${relativeFile}"
 			],
 			"problemMatcher": [],
 			"group": {
@@ -153,7 +154,7 @@
 				"isDefault": false
 			},
 			"options": {
-				"cwd": "${workspaceFolder}\\${relativeFileDirname}"
+				"cwd": "${workspaceFolder}${pathSeparator}${relativeFileDirname}"
 			}
 		}
 	]
