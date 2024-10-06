@@ -34,3 +34,6 @@
 [submodule "obug"]
 	path = obug
 	url = git@github.com:Hyrtwol/odin-obug.git
+[submodule "msbuild"]
+	path = msbuild
+	url = git@github.com:Hyrtwol/odin-msbuild.git
