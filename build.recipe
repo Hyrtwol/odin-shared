@@ -5,7 +5,7 @@
 		<ArtifactName>OdinShared</ArtifactName>
 		<ArtifactCompany>Hyrtwol</ArtifactCompany>
 		<ArtifactAuthors>Thomas la Cour</ArtifactAuthors>
-		<ArtifactCopyright>Copyright 2023 $(ArtifactCompany)</ArtifactCopyright>
+        <ArtifactCopyright>Copyright $([System.DateTime]::Now.ToString(`yyyy`)) $(ArtifactCompany)</ArtifactCopyright>
 		<ArtifactProjectUrl>https://github.com/Hyrtwol/odin-shared</ArtifactProjectUrl>
 		<ArtifactVCSRootUrl>git@github.com:Hyrtwol/odin-shared.git</ArtifactVCSRootUrl>
 	</PropertyGroup>
