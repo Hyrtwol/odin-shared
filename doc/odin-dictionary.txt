@@ -62,6 +62,8 @@ microui
 miniaudio
 mipmaps
 newtek
+objz
+objzero
 obug
 odinfmt
 origo
@@ -80,6 +82,7 @@ rawptr
 raycaster
 raylib
 real
+realloc
 rect
 reloc
 rendertarget
@@ -92,6 +95,7 @@ srgb
 struct
 sublang
 subresource
+texcoord
 tprintf
 trianglelist
 trunc
@@ -114,6 +118,8 @@ wndclassexw
 wndproc
 wolfenstein
 wparam
+wprintf
+wprintfln
 wstring
 wtprintf
 wtprintfln
