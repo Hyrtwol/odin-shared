@@ -22,9 +22,12 @@
 			<Flavour>Odin</Flavour>
 		</Project>
 
-		<Project Include="coreclr\tests">
+		<!-- <Project Include="coreclr\tests">
 			<Flavour>OdinTest</Flavour>
 			<Defines>-define:ODIN_TEST_THREADS=1</Defines>
+		</Project> -->
+		<Project Include="coreclr\tests">
+			<Flavour>Odin</Flavour>
 		</Project>
 		<Project Include="newtek_lightwave\tests">
 			<Flavour>OdinTest</Flavour>

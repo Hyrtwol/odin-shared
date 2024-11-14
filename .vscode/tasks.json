@@ -156,6 +156,20 @@
 			"options": {
 				"cwd": "${workspaceFolder}${pathSeparator}${relativeFileDirname}"
 			}
+		},
+		{
+			"label": "build recipe",
+			"type": "shell",
+			"command": "build",
+			"args": [],
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"options": {
+				"cwd": "${workspaceFolder}"
+			}
 		}
 	]
 }
