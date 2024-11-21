@@ -43,7 +43,7 @@
 	"cSpell.customDictionaries": {
 		"custom-dictionary-user": {
 			"name": "odin-dictionary",
-			"path": "doc/odin-dictionary.txt",
+			"path": "${workspaceFolder}${pathSeparator}doc${pathSeparator}odin-dictionary.txt",
 			"addWords": true,
 			"scope": "user"
 		}
@@ -54,5 +54,6 @@
 		},
 		"rc": "-resource:${workspaceFolder}${pathSeparator}doc${pathSeparator}odin.rc",
 		"odinfmt": "${env:ODIN_SHARED}${pathSeparator}ols${pathSeparator}odinfmt.exe"
-	}
+	},
+	"cmake.ignoreCMakeListsMissing": true
 }

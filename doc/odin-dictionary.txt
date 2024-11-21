@@ -109,6 +109,7 @@ unmap
 unorm
 userdata
 ushort
+vararg
 viewports
 vorbis
 waprintf
