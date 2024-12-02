@@ -43,6 +43,7 @@ keydown
 keyup
 killfocus
 langid
+libc
 libfmodex
 lightwave
 linalg
