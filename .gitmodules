@@ -37,3 +37,6 @@
 [submodule "msbuild"]
 	path = msbuild
 	url = git@github.com:Hyrtwol/odin-msbuild.git
+[submodule "owin"]
+	path = owin
+	url = git@github.com:Hyrtwol/odin-owin.git
