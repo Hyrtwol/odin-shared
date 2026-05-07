@@ -31,7 +31,8 @@
 		"*.fsb": "hexEditor.hexedit",
 		"*.fev": "hexEditor.hexedit",
 		"*.res": "hexEditor.hexedit",
-		"*.rom": "hexEditor.hexedit"
+		"*.rom": "hexEditor.hexedit",
+		"*.lib": "hexEditor.hexedit"
 	},
 	"git.enabled": false,
 	"xmlTools.splitXmlnsOnFormat": false,

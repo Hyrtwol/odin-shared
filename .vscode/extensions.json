@@ -4,6 +4,7 @@
 		"danielgavin.ols",
 		"streetsidesoftware.code-spell-checker",
 		"davidanson.vscode-markdownlint",
-        "dtsvet.vscode-wasm"
+        "dtsvet.vscode-wasm",
+		"ms-vscode.hexeditor"
 	]
 }
