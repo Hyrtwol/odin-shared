@@ -11,7 +11,7 @@
 		"editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
 	},
 	"terminal.integrated.defaultProfile.windows": "Command Prompt",
-	"typescript.tsc.autoDetect": "off",
+	"js/ts.tsc.autoDetect": "off",
 	"npm.autoDetect": "off",
 	"files.exclude": {
 		"**/.git": true,

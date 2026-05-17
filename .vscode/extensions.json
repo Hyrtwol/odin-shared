@@ -1,10 +1,10 @@
 {
 	"recommendations": [
 		"editorconfig.editorconfig",
-		"danielgavin.ols",
-		"streetsidesoftware.code-spell-checker",
-		"davidanson.vscode-markdownlint",
-        "dtsvet.vscode-wasm",
-		"ms-vscode.hexeditor"
+		// "streetsidesoftware.code-spell-checker",
+		// "davidanson.vscode-markdownlint",
+        // "dtsvet.vscode-wasm",
+		"ms-vscode.hexeditor",
+		"danielgavin.ols"
 	]
 }
