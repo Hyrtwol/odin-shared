@@ -37,18 +37,7 @@
 	"git.enabled": false,
 	"xmlTools.splitXmlnsOnFormat": false,
 	// "ols.server.path": "${env:ODIN_SHARED}${pathSeparator}ols${pathSeparator}ols.exe",
-	"cSpell.language": "en",
-	"#cSpell.enableFiletypes#": [
-		"odin"
-	],
-	"cSpell.customDictionaries": {
-		"custom-dictionary-user": {
-			"name": "odin-dictionary",
-			"path": "${workspaceFolder}${pathSeparator}doc${pathSeparator}odin-dictionary.txt",
-			"addWords": true,
-			"scope": "user"
-		}
-	},
+	// "ols.updates.askBeforeDownload": true,
 	"odin": {
 		"collection" : {
 			"shared": "-collection:shared=${env:ODIN_SHARED}",
@@ -56,5 +45,17 @@
 		"rc": "-resource:${workspaceFolder}${pathSeparator}doc${pathSeparator}odin.rc",
 		"odinfmt": "${env:ODIN_SHARED}${pathSeparator}ols${pathSeparator}odinfmt.exe"
 	},
-	"cmake.ignoreCMakeListsMissing": true
+	"cmake.ignoreCMakeListsMissing": true,
+	"cSpell.language": "en",
+    "cSpell.enabledFileTypes": {
+        "odin": true
+    },
+	"cSpell.customDictionaries": {
+		"custom-dictionary-user": {
+			"name": "odin-dictionary",
+			"path": "${workspaceFolder}${pathSeparator}doc${pathSeparator}odin-dictionary.txt",
+			"addWords": true,
+			"scope": "user"
+		}
+	}
 }
