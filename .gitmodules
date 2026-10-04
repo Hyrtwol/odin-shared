@@ -40,3 +40,6 @@
 [submodule "owin"]
 	path = owin
 	url = git@github.com:Hyrtwol/odin-owin.git
+[submodule "ymir"]
+	path = ymir
+	url = git@github.com:Hyrtwol/odin-ymir.git
