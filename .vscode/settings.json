@@ -23,9 +23,9 @@
 		"*.log": "plaintext",
 		"*.lst": "plaintext",
 		"*.fdp": "xml",
-		"*.recipe": "msbuild",
-		"*.csproj": "msbuild",
-		"*.oproj": "msbuild"
+		"*.recipe": "xml",
+		"*.csproj": "xml",
+		"*.oproj": "xml"
 	},
 	"workbench.editorAssociations": {
 		"*.fsb": "hexEditor.hexedit",
@@ -46,6 +46,7 @@
 		"odinfmt": "${env:ODIN_SHARED}${pathSeparator}ols${pathSeparator}odinfmt.exe"
 	},
 	"cmake.ignoreCMakeListsMissing": true,
+	"cSpell.enabled": false,
 	"cSpell.language": "en",
     "cSpell.enabledFileTypes": {
         "odin": true
