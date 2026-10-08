@@ -43,7 +43,9 @@
 			"shared": "-collection:shared=${env:ODIN_SHARED}",
 		},
 		"rc": "-resource:${workspaceFolder}${pathSeparator}doc${pathSeparator}odin.rc",
-		"odinfmt": "${env:ODIN_SHARED}${pathSeparator}ols${pathSeparator}odinfmt.exe"
+		"odinfmt": "${env:ODIN_SHARED}${pathSeparator}ols${pathSeparator}odinfmt.exe",
+		"odinroot": "${env:ODIN_ROOT}",
+		"odinexe": "${env:ODIN_ROOT}${pathSeparator}odin"
 	},
 	"cmake.ignoreCMakeListsMissing": true,
 	"cSpell.enabled": false,
